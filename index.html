@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Revista Digital — Escuela Secundaria 1 de Acevedo</title>
+<style>
+  :root {
+    --azul: #1a3a5c;
+    --azul-claro: #2c5f8a;
+    --fondo: #f7f5f0;
+    --texto: #2b2b2b;
+    --acento: #c9a55c;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: var(--fondo);
+    color: var(--texto);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    text-align: center;
+  }
+
+  .contenedor {
+    max-width: 640px;
+  }
+
+  .icono {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto 1.5rem;
+    color: var(--azul);
+  }
+
+  .escuela {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--azul-claro);
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    color: var(--azul);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .subtitulo {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  .linea {
+    width: 60px;
+    height: 3px;
+    background: var(--acento);
+    margin: 0 auto 2rem;
+    border-radius: 2px;
+  }
+
+  .badge {
+    display: inline-block;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: var(--azul);
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 999px;
+  }
+
+  .biblioteca {
+    margin-top: 3.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid #ddd;
+  }
+
+  .biblioteca img {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  }
+
+  .biblioteca p {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 0.8rem;
+  }
+
+  footer {
+    margin-top: 3rem;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.75rem;
+    color: #999;
+  }
+</style>
+</head>
+<body>
+  <div class="contenedor">
+    <svg class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <path d="M2 4h7a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H2V4z"/>
+      <path d="M22 4h-7a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h8V4z"/>
+    </svg>
+
+    <p class="escuela">Escuela Secundaria N.º 1 · Acevedo</p>
+    <h1>Revista Digital</h1>
+    <div class="linea"></div>
+    <p class="subtitulo">
+      Estamos preparando un nuevo espacio para leer, hojear y descubrir
+      las ediciones de nuestra revista escolar, directamente desde acá.
+    </p>
+    <span class="badge">Próximamente</span>
+
+    <div class="biblioteca">
+      <img src="ignacio-bibliotecario.jpg" alt="Ignacio, bibliotecario de la escuela">
+      <p>Ignacio, a cargo de la biblioteca escolar</p>
+    </div>
+
+    <footer>Escuela Secundaria N.º 1 de Acevedo — Pergamino</footer>
+  </div>
+</body>
+</html>
